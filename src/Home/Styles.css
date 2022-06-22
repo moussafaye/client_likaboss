@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@0,300;1,100&family=Sacramento&display=swap');
+
+html,
+body {
+    height: 300px;
+    background-image: url( './product_bg.png' );
+    font-family: 'Roboto';
+
+}
+
+/* .box {
+  background-color: #3C8DBC;
+  color: #fff;
+  text-align: center;
+} */
+
+.logo{
+  margin: 5px;
+  padding: 5px;
+}
+.inscription{
+  margin: 5px;
+  padding: 5px;
+}
+
+.container-one{
+    display:flex;
+    margin:  10px;
+    left: 10%;
+    position:absolute;
+    align-items:center;
+    width: 75%;
+    height: 60%;
+    justify-content: center;
+    border: 1px solid orange;
+}
+
+.container-one button {
+    background-color:orange;
+    margin: 10px 25px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    
+    font-size: 17px;
+    text-align: center;
+
+}
+
+.accroche{
+  text-align: center;
+   /* padding: 10px; */
+  
+   margin-top: 10px;
+   font-family: 'Sacramento', cursive;
+   font-size: 35px;
+   
+}
+
+.boutton{
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+}
+  
+.top-left {
+    top: 0;
+    left: 0;
+}
+  
+.top-center {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.top-right {
+    top: 0;
+    right: 0;
+}
+  
+.mid-left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+  
+.mid-center {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+.mid-right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+  
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+  
+.bottom-center {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
