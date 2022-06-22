@@ -26,7 +26,7 @@ const Home = () => {
           <div className='row'>
             <div className='col'>
               <button type='button' className='btn boutton'>
-                Click Me!
+                Click Me
               </button>
             </div>
             <div className='col'>
@@ -38,21 +38,35 @@ const Home = () => {
             </div>
             <div className='col'>
               <Link  to='pageb'>
-                {' '}
                 <button type='button' className='btn boutton'>
-                  Page C!
+                  Page B!
                 </button>
               </Link  >
             </div>
-          </div>
-          <div className='row'>
-            <div className='col-sm'>
-              <button type='button' className='btn boutton'>
-                Click Me!
-              </button>
+            <div className='col'>
+              <Link  to='pageb'>
+                <button type='button' className='btn boutton'>
+                  Page B!
+                </button>
+              </Link  >
+            </div>
+            <div className='col'>
+              <Link  to='pageb'>
+                <button type='button' className='btn boutton'>
+                  Page B!
+                </button>
+              </Link  >
+            </div>
+            <div className='col'>
+              <Link  to='pageb'>
+                {' '}
+                
+              </Link  >
             </div>
           </div>
-        </div>
+          
+            
+      </div>
       </div>
 
     </>
