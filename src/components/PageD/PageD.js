@@ -32,7 +32,7 @@ const PageD = () => {
   const dispatch = useDispatch();
 
   const [search, setSearch] = useState('');
-  const [tags, setTags] = useState([]);
+  const tags =[]
   const history = useHistory();
 
   const searchPost = () => {

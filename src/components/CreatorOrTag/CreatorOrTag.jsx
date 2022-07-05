@@ -19,7 +19,7 @@ const CreatorOrTag = () => {
     } else {
       dispatch(getPostsByCreator(name));
     }
-  }, [dispatch]);
+  }, [dispatch, location.pathname, name]);
 
   if (!posts.length && !isLoading) return 'Pas de profils';
 
