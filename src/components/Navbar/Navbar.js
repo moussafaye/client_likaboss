@@ -24,9 +24,9 @@ const Navbar = () => {
     setUser(null);
     
   }, [dispatch,history]);
-
+  const token = user?.token;
   useEffect(() => {
-    const token = user?.token;
+    
 
     if (token) {
       const decodedToken = decode(token);
@@ -35,7 +35,7 @@ const Navbar = () => {
     }
 
     setUser(JSON.parse(localStorage.getItem('profile')));
-  }, [location, logout, user.token]);
+  }, [ token, location, logout]);
 
   return (
     <>

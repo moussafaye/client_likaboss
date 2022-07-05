@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
+  
+ 
   return (
     <>
-      <Navbar />
+     <Navbar />
       <div>
         <h5 className='accroche'>
           Trouvez votre prestataire de service en un seul click!
