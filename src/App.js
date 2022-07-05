@@ -3,7 +3,7 @@ import { Container } from '@material-ui/core';
 import { BrowserRouter, Switch, Route, Redirect  } from 'react-router-dom';
 
 import PostDetails from './components/PostDetails/PostDetails';
-import Navbar from './components/Navbar/Navbar';
+
 import PageA from './components/PageA/PageA';
 import PageB from './components/PageB/PageB';
 import PageC from './components/PageC/PageC';
