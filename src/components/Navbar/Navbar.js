@@ -22,7 +22,8 @@ const Navbar = () => {
     history.push('/auth');
 
     setUser(null);
-  }, [dispatch,history, setUser]);
+    
+  }, [dispatch,history]);
 
   useEffect(() => {
     const token = user?.token;
@@ -34,7 +35,7 @@ const Navbar = () => {
     }
 
     setUser(JSON.parse(localStorage.getItem('profile')));
-  }, [location, logout]);
+  }, [location, logout, user.token]);
 
   return (
     <>
