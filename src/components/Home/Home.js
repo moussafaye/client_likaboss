@@ -1,21 +1,12 @@
-import React from 'react'
-import './Styles.css'
-import {Link} from 'react-router-dom'
-
+import React from 'react';
+import './Styles.css';
+import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
   return (
     <>
-            <h1 style={{ color: 'orange', textAlign: 'left' }} className='logo'>
-        {' '}
-        krksmart
-      </h1>
-      <h2
-        style={{ color: 'orange', textAlign: 'right' }}
-        className='inscription top-left'
-      >
-        <i className='fa-solid fa-user-large'></i> s'inscrire
-      </h2>
+      <Navbar />
       <div>
         <h5 className='accroche'>
           Trouvez votre prestataire de service en un seul click!
@@ -30,47 +21,41 @@ const Home = () => {
               </button>
             </div>
             <div className='col'>
-              <Link  to='pageb'>
+              <Link to='posts'>
+                <button type='button' className='btn boutton'>
+                  Page A!
+                </button>
+              </Link>
+            </div>
+            <div className='col'>
+              <Link to='pageb'>
                 <button type='button' className='btn boutton'>
                   Page B!
                 </button>
-              </Link  >
+              </Link>
             </div>
             <div className='col'>
-              <Link  to='pageb'>
+              <Link to='pagec'>
                 <button type='button' className='btn boutton'>
-                  Page B!
+                  Page C!
                 </button>
-              </Link  >
+              </Link>
             </div>
             <div className='col'>
-              <Link  to='pageb'>
+              <Link to='paged'>
                 <button type='button' className='btn boutton'>
-                  Page B!
+                  Page D!
                 </button>
-              </Link  >
+              </Link>
             </div>
             <div className='col'>
-              <Link  to='pageb'>
-                <button type='button' className='btn boutton'>
-                  Page B!
-                </button>
-              </Link  >
-            </div>
-            <div className='col'>
-              <Link  to='pageb'>
-                {' '}
-                
-              </Link  >
+              <Link to='posts'> </Link>
             </div>
           </div>
-          
-            
+        </div>
       </div>
-      </div>
-
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
