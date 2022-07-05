@@ -16,9 +16,9 @@ const Home = () => {
         <div className='container'>
           <div className='row'>
             <div className='col'>
-              <button type='button' className='btn boutton'>
+              {/* <button type='button' className='btn boutton'>
                 Click Me
-              </button>
+              </button> */}
             </div>
             <div className='col'>
               <Link to='posts'>
