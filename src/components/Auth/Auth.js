@@ -62,27 +62,27 @@ const SignUp = () => {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">{ isSignup ? 'Créer un compte' : 'Se connecter' }</Typography>
+        <Typography component="h1" variant="h5">{ isSignup ? 'Sign up' : 'Sign in' }</Typography>
         <form className={classes.form} onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             { isSignup && (
             <>
-              <Input name="firstName" label="Nom" handleChange={handleChange} autoFocus half />
-              <Input name="lastName" label="Prénom" handleChange={handleChange} half />
+              <Input name="firstName" label="First Name" handleChange={handleChange} autoFocus half />
+              <Input name="lastName" label="Last Name" handleChange={handleChange} half />
             </>
             )}
-            <Input name="email" label="Adresse Email" handleChange={handleChange} type="email" />
-            <Input name="password" label="Mot de Passe" handleChange={handleChange} type={showPassword ? 'text' : 'password'} handleShowPassword={handleShowPassword} />
-            { isSignup && <Input name="confirmPassword" label="Repéter Mot de passe" handleChange={handleChange} type="password" /> }
+            <Input name="email" label="Email Address" handleChange={handleChange} type="email" />
+            <Input name="password" label="Password" handleChange={handleChange} type={showPassword ? 'text' : 'password'} handleShowPassword={handleShowPassword} />
+            { isSignup && <Input name="confirmPassword" label="Repeat Password" handleChange={handleChange} type="password" /> }
           </Grid>
           <Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>
-            { isSignup ? 'Créer un compte' : 'Se connecter' }
+            { isSignup ? 'Sign Up' : 'Sign In' }
           </Button>
           <GoogleLogin
             clientId="1079962511481-791b3gjc1tcfh0cmhalc39gumm0ce6fu.apps.googleusercontent.com"
             render={(renderProps) => (
               <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">
-                Google
+                Google Sign In
               </Button>
             )}
             onSuccess={googleSuccess}
@@ -92,7 +92,7 @@ const SignUp = () => {
           <Grid container justify="flex-end">
             <Grid item>
               <Button onClick={switchMode}>
-                { isSignup ? 'Vous avez déjà un compte? Connecter' : "vous n'avez pas de comptre? Créer un compte" }
+                { isSignup ? 'Already have an account? Sign in' : "Don't have an account? Sign Up" }
               </Button>
             </Grid>
           </Grid>
@@ -103,4 +103,5 @@ const SignUp = () => {
 };
 
 export default SignUp;
+
 
